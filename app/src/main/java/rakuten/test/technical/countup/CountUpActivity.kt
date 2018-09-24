@@ -38,4 +38,9 @@ class CountUpActivity : AppCompatActivity() {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        counter.reset()
+    }
+
 }
